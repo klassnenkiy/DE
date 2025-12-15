@@ -1,0 +1,445 @@
+[2025-12-09T14:03:15.908+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-12-09T14:03:15.912+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pg_to_ch_simple_dwh.load_dim_card scheduled__2025-12-09T13:45:00+00:00 [queued]>
+[2025-12-09T14:03:15.914+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pg_to_ch_simple_dwh.load_dim_card scheduled__2025-12-09T13:45:00+00:00 [queued]>
+[2025-12-09T14:03:15.914+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-12-09T14:03:15.919+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): load_dim_card> on 2025-12-09 13:45:00+00:00
+[2025-12-09T14:03:15.920+0000] {standard_task_runner.py:72} INFO - Started process 76 to run task
+[2025-12-09T14:03:15.922+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'pg_to_ch_simple_dwh', 'load_dim_card', 'scheduled__2025-12-09T13:45:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/pg_to_ch_dag.py', '--cfg-path', '/tmp/tmpl_77mqsw']
+[2025-12-09T14:03:15.923+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask load_dim_card
+[2025-12-09T14:03:15.936+0000] {task_command.py:467} INFO - Running <TaskInstance: pg_to_ch_simple_dwh.load_dim_card scheduled__2025-12-09T13:45:00+00:00 [running]> on host 074e69260fe2
+[2025-12-09T14:03:15.953+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='pg_to_ch_simple_dwh' AIRFLOW_CTX_TASK_ID='load_dim_card' AIRFLOW_CTX_EXECUTION_DATE='2025-12-09T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-09T13:45:00+00:00'
+[2025-12-09T14:03:15.954+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-12-09T14:03:16.361+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 183, in load_card_dim
+    pg = pg_conn()
+         ^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 25, in pg_conn
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: cdfc9d0059eab: incorrect password
+connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: c8588b229c358: SSL is required
+
+[2025-12-09T14:03:16.373+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=pg_to_ch_simple_dwh, task_id=load_dim_card, run_id=scheduled__2025-12-09T13:45:00+00:00, execution_date=20251209T134500, start_date=20251209T140315, end_date=20251209T140316
+[2025-12-09T14:03:16.384+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-12-09T14:03:16.384+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 4 for task load_dim_card (connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: cdfc9d0059eab: incorrect password
+connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: c8588b229c358: SSL is required
+; 76)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 183, in load_card_dim
+    pg = pg_conn()
+         ^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 25, in pg_conn
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: cdfc9d0059eab: incorrect password
+connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: c8588b229c358: SSL is required
+
+[2025-12-09T14:03:16.392+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-12-09T14:03:16.402+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-09T14:03:16.403+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-12-09T14:06:55.747+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-12-09T14:06:55.750+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pg_to_ch_simple_dwh.load_dim_card scheduled__2025-12-09T13:45:00+00:00 [queued]>
+[2025-12-09T14:06:55.752+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pg_to_ch_simple_dwh.load_dim_card scheduled__2025-12-09T13:45:00+00:00 [queued]>
+[2025-12-09T14:06:55.752+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-12-09T14:06:55.756+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): load_dim_card> on 2025-12-09 13:45:00+00:00
+[2025-12-09T14:06:55.757+0000] {standard_task_runner.py:72} INFO - Started process 76 to run task
+[2025-12-09T14:06:55.759+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'pg_to_ch_simple_dwh', 'load_dim_card', 'scheduled__2025-12-09T13:45:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/pg_to_ch_dag.py', '--cfg-path', '/tmp/tmpe7unty_7']
+[2025-12-09T14:06:55.760+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask load_dim_card
+[2025-12-09T14:06:55.773+0000] {task_command.py:467} INFO - Running <TaskInstance: pg_to_ch_simple_dwh.load_dim_card scheduled__2025-12-09T13:45:00+00:00 [running]> on host dd0ab9420299
+[2025-12-09T14:06:55.791+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='pg_to_ch_simple_dwh' AIRFLOW_CTX_TASK_ID='load_dim_card' AIRFLOW_CTX_EXECUTION_DATE='2025-12-09T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-09T13:45:00+00:00'
+[2025-12-09T14:06:55.791+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-12-09T14:06:56.188+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 183, in load_card_dim
+    pg = pg_conn()
+         ^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 25, in pg_conn
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: c340f24759bbf: incorrect password
+connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: c6d32ee7fb1ef: SSL is required
+
+[2025-12-09T14:06:56.200+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=pg_to_ch_simple_dwh, task_id=load_dim_card, run_id=scheduled__2025-12-09T13:45:00+00:00, execution_date=20251209T134500, start_date=20251209T140655, end_date=20251209T140656
+[2025-12-09T14:06:56.209+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-12-09T14:06:56.209+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 4 for task load_dim_card (connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: c340f24759bbf: incorrect password
+connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: c6d32ee7fb1ef: SSL is required
+; 76)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 183, in load_card_dim
+    pg = pg_conn()
+         ^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 25, in pg_conn
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: c340f24759bbf: incorrect password
+connection to server at "rc1b-o3ezvcgz5072sgar.mdb.yandexcloud.net" (158.160.70.84), port 6432 failed: ERROR:  odyssey: c6d32ee7fb1ef: SSL is required
+
+[2025-12-09T14:06:56.233+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-12-09T14:06:56.246+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-09T14:06:56.246+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-12-09T14:10:32.749+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-12-09T14:10:32.753+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pg_to_ch_simple_dwh.load_dim_card scheduled__2025-12-09T13:45:00+00:00 [queued]>
+[2025-12-09T14:10:32.755+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pg_to_ch_simple_dwh.load_dim_card scheduled__2025-12-09T13:45:00+00:00 [queued]>
+[2025-12-09T14:10:32.755+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-12-09T14:10:32.761+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): load_dim_card> on 2025-12-09 13:45:00+00:00
+[2025-12-09T14:10:32.762+0000] {standard_task_runner.py:72} INFO - Started process 75 to run task
+[2025-12-09T14:10:32.764+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'pg_to_ch_simple_dwh', 'load_dim_card', 'scheduled__2025-12-09T13:45:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/pg_to_ch_dag.py', '--cfg-path', '/tmp/tmpyyjqsaff']
+[2025-12-09T14:10:32.765+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask load_dim_card
+[2025-12-09T14:10:32.787+0000] {task_command.py:467} INFO - Running <TaskInstance: pg_to_ch_simple_dwh.load_dim_card scheduled__2025-12-09T13:45:00+00:00 [running]> on host 1c74b019c4d4
+[2025-12-09T14:10:32.813+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='pg_to_ch_simple_dwh' AIRFLOW_CTX_TASK_ID='load_dim_card' AIRFLOW_CTX_EXECUTION_DATE='2025-12-09T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-09T13:45:00+00:00'
+[2025-12-09T14:10:32.813+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-12-09T14:10:33.227+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 203, in load_card_dim
+    ch.execute("TRUNCATE TABLE bank_dwh.stg_card;")
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 428, in connect
+    return self._init_connection(host, port)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 372, in _init_connection
+    self.receive_hello()
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 557, in receive_hello
+    raise self.receive_exception()
+clickhouse_driver.errors.ServerException: Code: 516.
+DB::Exception: default: Authentication failed: password is incorrect, or there is no user with such name.
+
+If you have installed ClickHouse and forgot password you can reset it in the configuration file.
+The password for default user is typically located at /etc/clickhouse-server/users.d/default-password.xml
+and deleting this file will reset the password.
+See also /etc/clickhouse-server/users.xml on the server where ClickHouse is installed.
+
+. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000bc5ad84
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x000000000759e65c
+2. DB::AccessControl::authenticate(DB::Credentials const&, Poco::Net::IPAddress const&, String const&) const @ 0x000000000e69bac4
+3. DB::Session::authenticate(DB::Credentials const&, Poco::Net::SocketAddress const&) @ 0x000000000f4acb40
+4. DB::TCPHandler::receiveHello() @ 0x00000000105cc4c4
+5. DB::TCPHandler::runImpl() @ 0x00000000105c2bf0
+6. DB::TCPHandler::run() @ 0x00000000105da408
+7. Poco::Net::TCPServerConnection::start() @ 0x0000000012d5ad18
+8. Poco::Net::TCPServerDispatcher::run() @ 0x0000000012d5b1f4
+9. Poco::PooledThread::run() @ 0x0000000012d26234
+10. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000012d24670
+11. start_thread @ 0x0000000000007624
+12. ? @ 0x00000000000d162c
+
+[2025-12-09T14:10:33.238+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=pg_to_ch_simple_dwh, task_id=load_dim_card, run_id=scheduled__2025-12-09T13:45:00+00:00, execution_date=20251209T134500, start_date=20251209T141032, end_date=20251209T141033
+[2025-12-09T14:10:33.276+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-12-09T14:10:33.276+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 4 for task load_dim_card (Code: 516.
+DB::Exception: default: Authentication failed: password is incorrect, or there is no user with such name.
+
+If you have installed ClickHouse and forgot password you can reset it in the configuration file.
+The password for default user is typically located at /etc/clickhouse-server/users.d/default-password.xml
+and deleting this file will reset the password.
+See also /etc/clickhouse-server/users.xml on the server where ClickHouse is installed.
+
+. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000bc5ad84
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x000000000759e65c
+2. DB::AccessControl::authenticate(DB::Credentials const&, Poco::Net::IPAddress const&, String const&) const @ 0x000000000e69bac4
+3. DB::Session::authenticate(DB::Credentials const&, Poco::Net::SocketAddress const&) @ 0x000000000f4acb40
+4. DB::TCPHandler::receiveHello() @ 0x00000000105cc4c4
+5. DB::TCPHandler::runImpl() @ 0x00000000105c2bf0
+6. DB::TCPHandler::run() @ 0x00000000105da408
+7. Poco::Net::TCPServerConnection::start() @ 0x0000000012d5ad18
+8. Poco::Net::TCPServerDispatcher::run() @ 0x0000000012d5b1f4
+9. Poco::PooledThread::run() @ 0x0000000012d26234
+10. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000012d24670
+11. start_thread @ 0x0000000000007624
+12. ? @ 0x00000000000d162c
+; 75)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pg_to_ch_dag.py", line 203, in load_card_dim
+    ch.execute("TRUNCATE TABLE bank_dwh.stg_card;")
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 428, in connect
+    return self._init_connection(host, port)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 372, in _init_connection
+    self.receive_hello()
+  File "/home/airflow/.local/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 557, in receive_hello
+    raise self.receive_exception()
+clickhouse_driver.errors.ServerException: Code: 516.
+DB::Exception: default: Authentication failed: password is incorrect, or there is no user with such name.
+
+If you have installed ClickHouse and forgot password you can reset it in the configuration file.
+The password for default user is typically located at /etc/clickhouse-server/users.d/default-password.xml
+and deleting this file will reset the password.
+See also /etc/clickhouse-server/users.xml on the server where ClickHouse is installed.
+
+. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000bc5ad84
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x000000000759e65c
+2. DB::AccessControl::authenticate(DB::Credentials const&, Poco::Net::IPAddress const&, String const&) const @ 0x000000000e69bac4
+3. DB::Session::authenticate(DB::Credentials const&, Poco::Net::SocketAddress const&) @ 0x000000000f4acb40
+4. DB::TCPHandler::receiveHello() @ 0x00000000105cc4c4
+5. DB::TCPHandler::runImpl() @ 0x00000000105c2bf0
+6. DB::TCPHandler::run() @ 0x00000000105da408
+7. Poco::Net::TCPServerConnection::start() @ 0x0000000012d5ad18
+8. Poco::Net::TCPServerDispatcher::run() @ 0x0000000012d5b1f4
+9. Poco::PooledThread::run() @ 0x0000000012d26234
+10. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000012d24670
+11. start_thread @ 0x0000000000007624
+12. ? @ 0x00000000000d162c
+
+[2025-12-09T14:10:33.316+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-12-09T14:10:33.327+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-09T14:10:33.328+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

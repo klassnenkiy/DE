@@ -1,0 +1,75 @@
+[2025-12-15T07:46:41.457+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-12-15T07:46:41.462+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pg_to_ch_dbt_incremental_dwh.dbt_run_raw_ods manual__2025-12-15T07:46:35.510013+00:00 [queued]>
+[2025-12-15T07:46:41.466+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pg_to_ch_dbt_incremental_dwh.dbt_run_raw_ods manual__2025-12-15T07:46:35.510013+00:00 [queued]>
+[2025-12-15T07:46:41.466+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-12-15T07:46:41.472+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): dbt_run_raw_ods> on 2025-12-15 07:46:35.510013+00:00
+[2025-12-15T07:46:41.475+0000] {standard_task_runner.py:72} INFO - Started process 73 to run task
+[2025-12-15T07:46:41.477+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'pg_to_ch_dbt_incremental_dwh', 'dbt_run_raw_ods', 'manual__2025-12-15T07:46:35.510013+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/dbt_incremental_dag.py', '--cfg-path', '/tmp/tmpoxr91el6']
+[2025-12-15T07:46:41.478+0000] {standard_task_runner.py:105} INFO - Job 12: Subtask dbt_run_raw_ods
+[2025-12-15T07:46:41.500+0000] {task_command.py:467} INFO - Running <TaskInstance: pg_to_ch_dbt_incremental_dwh.dbt_run_raw_ods manual__2025-12-15T07:46:35.510013+00:00 [running]> on host 03773faa8bad
+[2025-12-15T07:46:41.538+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='pg_to_ch_dbt_incremental_dwh' AIRFLOW_CTX_TASK_ID='dbt_run_raw_ods' AIRFLOW_CTX_EXECUTION_DATE='2025-12-15T07:46:35.510013+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-15T07:46:35.510013+00:00'
+[2025-12-15T07:46:41.538+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-12-15T07:46:41.547+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-15T07:46:41.547+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/dbt && dbt ls && dbt run --select path:models/raw path:models/ods']
+[2025-12-15T07:46:41.561+0000] {subprocess.py:86} INFO - Output:
+[2025-12-15T07:46:43.166+0000] {subprocess.py:93} INFO - [0m07:46:43  Running with dbt=1.10.15
+[2025-12-15T07:46:43.319+0000] {subprocess.py:93} INFO - [0m07:46:43  Registered adapter: clickhouse=1.9.7
+[2025-12-15T07:46:43.535+0000] {subprocess.py:93} INFO - [0m07:46:43  Found 15 models, 5 sources, 486 macros
+[2025-12-15T07:46:43.536+0000] {subprocess.py:93} INFO - bank_dwh.ods.ods_dim_account
+[2025-12-15T07:46:43.537+0000] {subprocess.py:93} INFO - bank_dwh.ods.ods_dim_card
+[2025-12-15T07:46:43.537+0000] {subprocess.py:93} INFO - bank_dwh.ods.ods_dim_customer
+[2025-12-15T07:46:43.537+0000] {subprocess.py:93} INFO - bank_dwh.ods.ods_dim_terminal
+[2025-12-15T07:46:43.538+0000] {subprocess.py:93} INFO - bank_dwh.ods.ods_fact_atm_transaction
+[2025-12-15T07:46:43.538+0000] {subprocess.py:93} INFO - bank_dwh.raw.raw_account
+[2025-12-15T07:46:43.538+0000] {subprocess.py:93} INFO - bank_dwh.raw.raw_card
+[2025-12-15T07:46:43.538+0000] {subprocess.py:93} INFO - bank_dwh.raw.raw_customer
+[2025-12-15T07:46:43.539+0000] {subprocess.py:93} INFO - bank_dwh.raw.raw_terminal
+[2025-12-15T07:46:43.539+0000] {subprocess.py:93} INFO - bank_dwh.raw.raw_transaction
+[2025-12-15T07:46:43.540+0000] {subprocess.py:93} INFO - bank_dwh.stg.stg_account
+[2025-12-15T07:46:43.540+0000] {subprocess.py:93} INFO - bank_dwh.stg.stg_card
+[2025-12-15T07:46:43.540+0000] {subprocess.py:93} INFO - bank_dwh.stg.stg_customer
+[2025-12-15T07:46:43.540+0000] {subprocess.py:93} INFO - bank_dwh.stg.stg_terminal
+[2025-12-15T07:46:43.541+0000] {subprocess.py:93} INFO - bank_dwh.stg.stg_transaction
+[2025-12-15T07:46:43.541+0000] {subprocess.py:93} INFO - source:bank_dwh.bank_dwh.stg_account
+[2025-12-15T07:46:43.542+0000] {subprocess.py:93} INFO - source:bank_dwh.bank_dwh.stg_card
+[2025-12-15T07:46:43.542+0000] {subprocess.py:93} INFO - source:bank_dwh.bank_dwh.stg_customer
+[2025-12-15T07:46:43.542+0000] {subprocess.py:93} INFO - source:bank_dwh.bank_dwh.stg_terminal
+[2025-12-15T07:46:43.546+0000] {subprocess.py:93} INFO - source:bank_dwh.bank_dwh.stg_transaction
+[2025-12-15T07:46:45.617+0000] {subprocess.py:93} INFO - [0m07:46:45  Running with dbt=1.10.15
+[2025-12-15T07:46:45.757+0000] {subprocess.py:93} INFO - [0m07:46:45  Registered adapter: clickhouse=1.9.7
+[2025-12-15T07:46:45.950+0000] {subprocess.py:93} INFO - [0m07:46:45  Found 15 models, 5 sources, 486 macros
+[2025-12-15T07:46:45.952+0000] {subprocess.py:93} INFO - [0m07:46:45
+[2025-12-15T07:46:45.953+0000] {subprocess.py:93} INFO - [0m07:46:45  Concurrency: 1 threads (target='dev')
+[2025-12-15T07:46:45.953+0000] {subprocess.py:93} INFO - [0m07:46:45
+[2025-12-15T07:46:46.148+0000] {subprocess.py:93} INFO - [0m07:46:46  1 of 10 START sql incremental model `bank_dwh`.`raw_account` ................... [RUN]
+[2025-12-15T07:46:46.304+0000] {subprocess.py:93} INFO - [0m07:46:46  1 of 10 OK created sql incremental model `bank_dwh`.`raw_account` .............. [[32mOK[0m in 0.15s]
+[2025-12-15T07:46:46.305+0000] {subprocess.py:93} INFO - [0m07:46:46  2 of 10 START sql incremental model `bank_dwh`.`raw_card` ...................... [RUN]
+[2025-12-15T07:46:46.365+0000] {subprocess.py:93} INFO - [0m07:46:46  2 of 10 OK created sql incremental model `bank_dwh`.`raw_card` ................. [[32mOK[0m in 0.06s]
+[2025-12-15T07:46:46.367+0000] {subprocess.py:93} INFO - [0m07:46:46  3 of 10 START sql incremental model `bank_dwh`.`raw_customer` .................. [RUN]
+[2025-12-15T07:46:46.421+0000] {subprocess.py:93} INFO - [0m07:46:46  3 of 10 OK created sql incremental model `bank_dwh`.`raw_customer` ............. [[32mOK[0m in 0.05s]
+[2025-12-15T07:46:46.422+0000] {subprocess.py:93} INFO - [0m07:46:46  4 of 10 START sql incremental model `bank_dwh`.`raw_terminal` .................. [RUN]
+[2025-12-15T07:46:46.532+0000] {subprocess.py:93} INFO - [0m07:46:46  4 of 10 OK created sql incremental model `bank_dwh`.`raw_terminal` ............. [[32mOK[0m in 0.11s]
+[2025-12-15T07:46:46.534+0000] {subprocess.py:93} INFO - [0m07:46:46  5 of 10 START sql incremental model `bank_dwh`.`raw_transaction` ............... [RUN]
+[2025-12-15T07:46:46.591+0000] {subprocess.py:93} INFO - [0m07:46:46  5 of 10 OK created sql incremental model `bank_dwh`.`raw_transaction` .......... [[32mOK[0m in 0.06s]
+[2025-12-15T07:46:46.592+0000] {subprocess.py:93} INFO - [0m07:46:46  6 of 10 START sql table model `bank_dwh`.`ods_dim_account` ..................... [RUN]
+[2025-12-15T07:46:46.626+0000] {subprocess.py:93} INFO - [0m07:46:46  6 of 10 OK created sql table model `bank_dwh`.`ods_dim_account` ................ [[32mOK[0m in 0.03s]
+[2025-12-15T07:46:46.627+0000] {subprocess.py:93} INFO - [0m07:46:46  7 of 10 START sql table model `bank_dwh`.`ods_dim_card` ........................ [RUN]
+[2025-12-15T07:46:46.652+0000] {subprocess.py:93} INFO - [0m07:46:46  7 of 10 OK created sql table model `bank_dwh`.`ods_dim_card` ................... [[32mOK[0m in 0.02s]
+[2025-12-15T07:46:46.654+0000] {subprocess.py:93} INFO - [0m07:46:46  8 of 10 START sql table model `bank_dwh`.`ods_dim_customer` .................... [RUN]
+[2025-12-15T07:46:46.679+0000] {subprocess.py:93} INFO - [0m07:46:46  8 of 10 OK created sql table model `bank_dwh`.`ods_dim_customer` ............... [[32mOK[0m in 0.02s]
+[2025-12-15T07:46:46.680+0000] {subprocess.py:93} INFO - [0m07:46:46  9 of 10 START sql table model `bank_dwh`.`ods_dim_terminal` .................... [RUN]
+[2025-12-15T07:46:46.706+0000] {subprocess.py:93} INFO - [0m07:46:46  9 of 10 OK created sql table model `bank_dwh`.`ods_dim_terminal` ............... [[32mOK[0m in 0.03s]
+[2025-12-15T07:46:46.708+0000] {subprocess.py:93} INFO - [0m07:46:46  10 of 10 START sql table model `bank_dwh`.`ods_fact_atm_transaction` ........... [RUN]
+[2025-12-15T07:46:46.744+0000] {subprocess.py:93} INFO - [0m07:46:46  10 of 10 OK created sql table model `bank_dwh`.`ods_fact_atm_transaction` ...... [[32mOK[0m in 0.03s]
+[2025-12-15T07:46:46.746+0000] {subprocess.py:93} INFO - [0m07:46:46
+[2025-12-15T07:46:46.746+0000] {subprocess.py:93} INFO - [0m07:46:46  Finished running 5 incremental models, 5 table models in 0 hours 0 minutes and 0.79 seconds (0.79s).
+[2025-12-15T07:46:46.780+0000] {subprocess.py:93} INFO - [0m07:46:46
+[2025-12-15T07:46:46.780+0000] {subprocess.py:93} INFO - [0m07:46:46  [32mCompleted successfully[0m
+[2025-12-15T07:46:46.781+0000] {subprocess.py:93} INFO - [0m07:46:46
+[2025-12-15T07:46:46.782+0000] {subprocess.py:93} INFO - [0m07:46:46  Done. PASS=10 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=10
+[2025-12-15T07:46:47.755+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-15T07:46:47.771+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-12-15T07:46:47.771+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=pg_to_ch_dbt_incremental_dwh, task_id=dbt_run_raw_ods, run_id=manual__2025-12-15T07:46:35.510013+00:00, execution_date=20251215T074635, start_date=20251215T074641, end_date=20251215T074647
+[2025-12-15T07:46:47.787+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-12-15T07:46:47.795+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-15T07:46:47.796+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
