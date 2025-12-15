@@ -10,3 +10,5 @@ sources:
       - name: stg_terminal
       - name: stg_transaction
       - name: stg_transaction_cdc
+      - name: stg_cdc_card
+      - name: stg_cdc_transaction

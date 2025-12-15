@@ -8,7 +8,7 @@ WITH events AS (
     kafka_partition,
     kafka_offset
   FROM {{ source('bank_dwh', 'stg_cdc_transaction') }}
-  WHERE op IN ('r','c')
+  WHERE op IN ('c')
 ),
 
 parsed AS (

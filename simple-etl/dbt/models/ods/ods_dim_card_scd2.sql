@@ -49,7 +49,7 @@ ordered AS (
       PARTITION BY card_id
       ORDER BY src_ts, kafka_partition, kafka_offset
     ) AS rn,
-    lead(src_ts) OVER (
+    lead(src_ts, 1) OVER (
       PARTITION BY card_id
       ORDER BY src_ts, kafka_partition, kafka_offset
     ) AS next_ts
