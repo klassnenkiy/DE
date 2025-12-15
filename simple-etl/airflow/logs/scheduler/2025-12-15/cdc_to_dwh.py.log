@@ -1063,3 +1063,500 @@
 [2025-12-15T10:07:32.082+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:07:32.082+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2025-12-15T10:07:32.399+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:07:32.399+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 09:50:00+00:00, run_after=2025-12-15 10:00:00+00:00
 [2025-12-15T10:07:32.410+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.432 seconds
+[2025-12-15T10:08:02.724+0000] {processor.py:186} INFO - Started process (PID=607) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:08:02.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:08:02.729+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:08:02.728+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:08:02.744+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:08:02.778+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:08:02.778+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:08:02.793+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:08:02.793+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 09:50:00+00:00, run_after=2025-12-15 10:00:00+00:00
+[2025-12-15T10:08:02.802+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.085 seconds
+[2025-12-15T10:08:33.526+0000] {processor.py:186} INFO - Started process (PID=611) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:08:33.528+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:08:33.532+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:08:33.531+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:08:33.559+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:08:33.585+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:08:33.585+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:08:33.605+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:08:33.605+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 09:50:00+00:00, run_after=2025-12-15 10:00:00+00:00
+[2025-12-15T10:08:33.951+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.433 seconds
+[2025-12-15T10:09:04.266+0000] {processor.py:186} INFO - Started process (PID=615) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:09:04.268+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:09:04.272+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:09:04.271+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:09:04.299+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:09:04.585+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:09:04.585+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:09:04.594+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:09:04.594+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 09:50:00+00:00, run_after=2025-12-15 10:00:00+00:00
+[2025-12-15T10:09:04.626+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.375 seconds
+[2025-12-15T10:09:35.073+0000] {processor.py:186} INFO - Started process (PID=619) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:09:35.075+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:09:35.079+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:09:35.078+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:09:35.103+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:09:35.126+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:09:35.126+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:09:35.140+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:09:35.140+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 09:50:00+00:00, run_after=2025-12-15 10:00:00+00:00
+[2025-12-15T10:09:35.161+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.098 seconds
+[2025-12-15T10:10:05.558+0000] {processor.py:186} INFO - Started process (PID=623) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:10:05.560+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:10:05.563+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:10:05.563+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:10:05.594+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:10:05.621+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:10:05.621+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:10:05.636+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:10:05.636+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:10:05.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.114 seconds
+[2025-12-15T10:10:35.956+0000] {processor.py:186} INFO - Started process (PID=627) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:10:35.958+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:10:35.960+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:10:35.960+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:10:35.972+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:10:36.015+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:10:36.015+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:10:36.033+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:10:36.033+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:10:36.063+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.115 seconds
+[2025-12-15T10:11:06.314+0000] {processor.py:186} INFO - Started process (PID=631) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:11:06.315+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:11:06.318+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:11:06.318+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:11:06.331+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:11:06.348+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:11:06.348+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:11:06.361+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:11:06.361+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:11:06.383+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.074 seconds
+[2025-12-15T10:11:36.858+0000] {processor.py:186} INFO - Started process (PID=635) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:11:36.859+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:11:36.864+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:11:36.863+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:11:36.879+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:11:36.923+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:11:36.923+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:11:36.945+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:11:36.945+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:11:36.978+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.130 seconds
+[2025-12-15T10:12:07.957+0000] {processor.py:186} INFO - Started process (PID=639) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:12:07.959+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:12:07.964+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:12:07.963+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:12:07.981+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:12:08.014+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:12:08.014+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:12:08.029+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:12:08.029+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:12:08.053+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.113 seconds
+[2025-12-15T10:12:38.615+0000] {processor.py:186} INFO - Started process (PID=643) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:12:38.617+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:12:38.624+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:12:38.623+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:12:38.653+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:12:38.680+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:12:38.680+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:12:38.707+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:12:38.707+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:12:38.730+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.148 seconds
+[2025-12-15T10:13:09.160+0000] {processor.py:186} INFO - Started process (PID=647) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:13:09.162+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:13:09.167+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:13:09.166+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:13:09.194+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:13:09.221+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:13:09.220+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:13:09.235+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:13:09.235+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:13:09.261+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.122 seconds
+[2025-12-15T10:13:39.578+0000] {processor.py:186} INFO - Started process (PID=651) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:13:39.581+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:13:39.590+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:13:39.589+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:13:39.611+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:13:39.632+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:13:39.632+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:13:39.658+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:13:39.657+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:13:39.684+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.141 seconds
+[2025-12-15T10:14:09.972+0000] {processor.py:186} INFO - Started process (PID=655) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:14:09.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:14:09.975+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:14:09.975+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:14:09.983+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:14:09.995+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:14:09.995+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:14:10.007+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:14:10.006+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:14:10.022+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.055 seconds
+[2025-12-15T10:14:40.371+0000] {processor.py:186} INFO - Started process (PID=659) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:14:40.372+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:14:40.374+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:14:40.373+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:14:40.381+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:14:40.393+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:14:40.393+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:14:40.403+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:14:40.403+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:14:40.414+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.047 seconds
+[2025-12-15T10:15:10.744+0000] {processor.py:186} INFO - Started process (PID=663) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:15:10.746+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:15:10.749+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:15:10.749+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:15:10.761+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:15:10.805+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:15:10.804+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:15:10.827+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:15:10.827+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:15:10.844+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.118 seconds
+[2025-12-15T10:15:41.210+0000] {processor.py:186} INFO - Started process (PID=667) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:15:41.212+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:15:41.216+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:15:41.215+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:15:41.228+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:15:41.247+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:15:41.247+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:15:41.261+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:15:41.261+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:15:41.274+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.070 seconds
+[2025-12-15T10:16:11.378+0000] {processor.py:186} INFO - Started process (PID=671) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:16:11.382+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:16:11.386+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:16:11.386+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:16:11.401+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:16:11.419+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:16:11.419+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:16:11.447+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:16:11.447+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:16:11.461+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.101 seconds
+[2025-12-15T10:16:42.036+0000] {processor.py:186} INFO - Started process (PID=675) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:16:42.039+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:16:42.045+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:16:42.044+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:16:42.060+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:16:42.080+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:16:42.079+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:16:42.093+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:16:42.093+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:16:42.105+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.082 seconds
+[2025-12-15T10:17:12.444+0000] {processor.py:186} INFO - Started process (PID=679) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:17:12.445+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:17:12.449+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:17:12.448+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:17:12.486+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:17:12.511+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:17:12.511+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:17:12.528+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:17:12.528+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:17:12.544+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.110 seconds
+[2025-12-15T10:17:42.899+0000] {processor.py:186} INFO - Started process (PID=683) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:17:42.901+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:17:42.906+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:17:42.905+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:17:42.930+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:17:42.955+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:17:42.955+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:17:42.989+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:17:42.989+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:17:43.002+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.112 seconds
+[2025-12-15T10:18:13.300+0000] {processor.py:186} INFO - Started process (PID=687) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:18:13.302+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:18:13.305+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:18:13.305+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:18:13.320+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:18:13.360+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:18:13.360+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:18:13.386+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:18:13.386+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:18:13.399+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.107 seconds
+[2025-12-15T10:18:43.714+0000] {processor.py:186} INFO - Started process (PID=691) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:18:43.714+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:18:43.717+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:18:43.716+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:18:43.723+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:18:43.739+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:18:43.739+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:18:43.752+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:18:43.752+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:18:43.763+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.054 seconds
+[2025-12-15T10:19:14.186+0000] {processor.py:186} INFO - Started process (PID=695) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:19:14.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:19:14.200+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:19:14.199+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:19:14.216+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:19:14.246+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:19:14.246+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:19:14.265+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:19:14.265+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:19:14.280+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.110 seconds
+[2025-12-15T10:19:44.565+0000] {processor.py:186} INFO - Started process (PID=699) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:19:44.567+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:19:44.571+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:19:44.570+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:19:44.582+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:19:44.597+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:19:44.597+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:19:44.608+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:19:44.608+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:00:00+00:00, run_after=2025-12-15 10:10:00+00:00
+[2025-12-15T10:19:44.619+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.060 seconds
+[2025-12-15T10:20:14.919+0000] {processor.py:186} INFO - Started process (PID=703) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:20:14.921+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:20:14.925+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:20:14.925+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:20:14.942+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:20:14.982+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:20:14.982+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:20:14.998+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:20:14.998+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:20:15.011+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.114 seconds
+[2025-12-15T10:20:45.329+0000] {processor.py:186} INFO - Started process (PID=707) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:20:45.330+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:20:45.333+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:20:45.333+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:20:45.343+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:20:45.357+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:20:45.357+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:20:45.368+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:20:45.368+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:20:45.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.057 seconds
+[2025-12-15T10:21:15.764+0000] {processor.py:186} INFO - Started process (PID=711) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:21:15.766+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:21:15.771+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:21:15.770+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:21:15.787+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:21:15.809+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:21:15.809+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:21:15.835+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:21:15.835+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:21:15.850+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.092 seconds
+[2025-12-15T10:21:46.152+0000] {processor.py:186} INFO - Started process (PID=715) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:21:46.154+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:21:46.156+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:21:46.156+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:21:46.166+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:21:46.180+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:21:46.180+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:21:46.192+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:21:46.191+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:21:46.203+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.056 seconds
+[2025-12-15T10:22:16.617+0000] {processor.py:186} INFO - Started process (PID=719) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:22:16.618+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:22:16.621+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:22:16.621+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:22:16.661+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:22:16.684+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:22:16.684+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:22:16.700+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:22:16.700+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:22:16.721+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.113 seconds
+[2025-12-15T10:22:46.912+0000] {processor.py:186} INFO - Started process (PID=723) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:22:46.913+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:22:46.915+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:22:46.914+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:22:46.922+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:22:46.935+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:22:46.935+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:22:46.945+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:22:46.944+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:22:46.953+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.046 seconds
+[2025-12-15T10:23:17.341+0000] {processor.py:186} INFO - Started process (PID=727) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:23:17.343+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:23:17.346+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:23:17.346+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:23:17.363+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:23:17.402+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:23:17.402+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:23:17.417+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:23:17.417+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:23:17.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.095 seconds
+[2025-12-15T10:23:47.796+0000] {processor.py:186} INFO - Started process (PID=731) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:23:47.798+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:23:47.800+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:23:47.800+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:23:47.809+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:23:47.823+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:23:47.823+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:23:47.836+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:23:47.836+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:23:47.847+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.059 seconds
+[2025-12-15T10:24:18.217+0000] {processor.py:186} INFO - Started process (PID=735) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:24:18.219+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:24:18.223+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:24:18.223+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:24:18.260+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:24:18.284+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:24:18.284+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:24:18.302+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:24:18.301+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:24:18.316+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.106 seconds
+[2025-12-15T10:24:48.531+0000] {processor.py:186} INFO - Started process (PID=739) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:24:48.533+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:24:48.535+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:24:48.534+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:24:48.542+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:24:48.559+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:24:48.559+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:24:48.569+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:24:48.569+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:24:48.578+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.050 seconds
+[2025-12-15T10:25:18.867+0000] {processor.py:186} INFO - Started process (PID=743) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:25:18.869+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:25:18.873+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:25:18.873+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:25:18.889+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:25:18.925+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:25:18.925+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:25:18.947+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:25:18.946+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:25:18.960+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.103 seconds
+[2025-12-15T10:25:49.258+0000] {processor.py:186} INFO - Started process (PID=747) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:25:49.260+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:25:49.263+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:25:49.263+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:25:49.275+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:25:49.294+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:25:49.294+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:25:49.309+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:25:49.309+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:25:49.320+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.067 seconds
+[2025-12-15T10:26:19.681+0000] {processor.py:186} INFO - Started process (PID=751) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:26:19.683+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:26:19.686+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:26:19.686+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:26:19.696+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:26:19.713+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:26:19.712+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:26:19.725+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:26:19.725+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:26:19.735+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.059 seconds
+[2025-12-15T10:26:50.109+0000] {processor.py:186} INFO - Started process (PID=755) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:26:50.110+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:26:50.112+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:26:50.112+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:26:50.118+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:26:50.128+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:26:50.127+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:26:50.136+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:26:50.136+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:26:50.145+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.041 seconds
+[2025-12-15T10:27:20.558+0000] {processor.py:186} INFO - Started process (PID=759) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:27:20.560+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:27:20.563+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:27:20.562+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:27:20.591+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:27:20.614+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:27:20.614+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:27:20.631+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:27:20.631+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:27:20.653+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.102 seconds
+[2025-12-15T10:27:50.863+0000] {processor.py:186} INFO - Started process (PID=763) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:27:50.865+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:27:50.868+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:27:50.868+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:27:50.878+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:27:50.892+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:27:50.892+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:27:50.902+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:27:50.902+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:27:50.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.054 seconds
+[2025-12-15T10:28:21.286+0000] {processor.py:186} INFO - Started process (PID=767) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:28:21.289+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:28:21.293+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:28:21.293+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:28:21.333+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:28:21.364+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:28:21.364+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:28:21.383+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:28:21.382+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:28:21.397+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.119 seconds
+[2025-12-15T10:28:51.695+0000] {processor.py:186} INFO - Started process (PID=771) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:28:51.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:28:51.701+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:28:51.700+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:28:51.714+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:28:51.730+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:28:51.730+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:28:51.746+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:28:51.746+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:28:51.762+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.076 seconds
+[2025-12-15T10:29:22.126+0000] {processor.py:186} INFO - Started process (PID=775) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:29:22.129+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:29:22.133+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:29:22.132+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:29:22.153+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:29:22.173+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:29:22.173+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:29:22.189+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:29:22.189+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:29:22.203+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.083 seconds
+[2025-12-15T10:29:52.535+0000] {processor.py:186} INFO - Started process (PID=779) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:29:52.537+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:29:52.541+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:29:52.540+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:29:52.553+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:29:52.572+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:29:52.572+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:29:52.586+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:29:52.586+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:10:00+00:00, run_after=2025-12-15 10:20:00+00:00
+[2025-12-15T10:29:52.598+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.070 seconds
+[2025-12-15T10:30:22.825+0000] {processor.py:186} INFO - Started process (PID=783) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:30:22.826+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:30:22.828+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:30:22.828+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:30:22.837+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:30:22.859+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:30:22.858+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:30:22.871+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:30:22.871+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:30:22.882+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.060 seconds
+[2025-12-15T10:30:53.254+0000] {processor.py:186} INFO - Started process (PID=787) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:30:53.255+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:30:53.256+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:30:53.256+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:30:53.262+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:30:53.271+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:30:53.271+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:30:53.279+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:30:53.279+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:30:53.289+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.038 seconds
+[2025-12-15T10:31:23.802+0000] {processor.py:186} INFO - Started process (PID=791) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:31:23.804+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:31:23.806+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:31:23.806+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:31:23.816+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:31:23.835+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:31:23.834+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:31:23.851+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:31:23.851+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:31:23.866+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.073 seconds
+[2025-12-15T10:31:54.346+0000] {processor.py:186} INFO - Started process (PID=795) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:31:54.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:31:54.353+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:31:54.352+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:31:54.370+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:31:54.407+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:31:54.407+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:31:54.478+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:31:54.477+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:31:54.513+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.175 seconds
+[2025-12-15T10:32:24.753+0000] {processor.py:186} INFO - Started process (PID=799) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:32:24.755+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:32:24.761+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:32:24.760+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:32:24.795+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:32:24.817+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:32:24.817+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:32:24.833+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:32:24.833+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:32:24.850+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.105 seconds
+[2025-12-15T10:32:55.184+0000] {processor.py:186} INFO - Started process (PID=803) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:32:55.185+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:32:55.187+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:32:55.187+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:32:55.195+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:32:55.208+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:32:55.208+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:32:55.221+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:32:55.221+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:32:55.237+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.058 seconds
+[2025-12-15T10:33:25.937+0000] {processor.py:186} INFO - Started process (PID=807) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:33:25.939+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:33:25.943+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:33:25.943+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:33:25.959+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:33:26.002+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:33:26.002+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:33:26.020+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:33:26.020+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:33:26.035+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.106 seconds
+[2025-12-15T10:33:56.410+0000] {processor.py:186} INFO - Started process (PID=811) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:33:56.413+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:33:56.419+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:33:56.418+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:33:56.444+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:33:56.510+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:33:56.510+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:33:56.556+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:33:56.556+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:33:56.596+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.211 seconds
+[2025-12-15T10:34:26.923+0000] {processor.py:186} INFO - Started process (PID=815) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:34:26.925+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:34:26.929+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:34:26.928+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:34:26.946+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:34:26.998+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:34:26.997+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:34:27.017+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:34:27.017+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:34:27.031+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.116 seconds
+[2025-12-15T10:34:57.334+0000] {processor.py:186} INFO - Started process (PID=819) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:34:57.337+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:34:57.343+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:34:57.342+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:34:57.382+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:34:57.417+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:34:57.417+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:34:57.440+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:34:57.440+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:34:57.460+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.134 seconds
+[2025-12-15T10:35:27.879+0000] {processor.py:186} INFO - Started process (PID=823) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:35:27.882+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:35:27.906+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:35:27.903+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:35:27.950+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:35:27.985+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:35:27.984+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:35:28.008+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:35:28.008+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:35:28.026+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.157 seconds
+[2025-12-15T10:35:58.453+0000] {processor.py:186} INFO - Started process (PID=827) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:35:58.456+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:35:58.464+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:35:58.463+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:35:58.513+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:35:58.553+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:35:58.553+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:35:58.573+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:35:58.573+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:35:58.590+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.151 seconds
+[2025-12-15T10:36:28.945+0000] {processor.py:186} INFO - Started process (PID=831) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:36:28.947+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:36:28.952+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:36:28.951+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:36:28.969+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:36:28.999+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:36:28.999+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:36:29.023+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:36:29.022+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:36:29.043+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.107 seconds
+[2025-12-15T10:36:59.342+0000] {processor.py:186} INFO - Started process (PID=835) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:36:59.344+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:36:59.348+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:36:59.347+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:36:59.367+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:36:59.398+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:36:59.398+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:36:59.417+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:36:59.417+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:36:59.462+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.127 seconds
+[2025-12-15T10:37:29.873+0000] {processor.py:186} INFO - Started process (PID=840) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:37:29.875+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:37:29.879+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:37:29.878+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:37:29.913+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:37:29.940+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:37:29.940+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:37:29.960+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:37:29.960+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:37:29.994+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.130 seconds
+[2025-12-15T10:38:00.439+0000] {processor.py:186} INFO - Started process (PID=844) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:38:00.441+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:38:00.446+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:38:00.445+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:38:00.465+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:38:00.492+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:38:00.492+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:38:00.513+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:38:00.513+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:38:00.539+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.110 seconds
+[2025-12-15T10:38:31.110+0000] {processor.py:186} INFO - Started process (PID=848) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:38:31.113+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:38:31.118+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:38:31.117+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:38:31.136+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:38:31.172+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:38:31.172+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:38:31.193+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:38:31.193+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:38:31.239+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.134 seconds
+[2025-12-15T10:39:01.628+0000] {processor.py:186} INFO - Started process (PID=852) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:39:01.630+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:39:01.636+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:39:01.635+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:39:01.654+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:39:01.681+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:39:01.681+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:39:01.707+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:39:01.707+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:39:01.735+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.117 seconds
+[2025-12-15T10:39:32.191+0000] {processor.py:186} INFO - Started process (PID=856) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:39:32.193+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:39:32.198+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:39:32.197+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:39:32.214+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:39:32.239+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:39:32.239+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:39:32.260+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:39:32.260+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:20:00+00:00, run_after=2025-12-15 10:30:00+00:00
+[2025-12-15T10:39:32.276+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.093 seconds
+[2025-12-15T10:40:02.729+0000] {processor.py:186} INFO - Started process (PID=860) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:40:02.731+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:40:02.758+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:40:02.757+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:40:02.778+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:40:02.804+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:40:02.804+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:40:02.823+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:40:02.822+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:30:00+00:00, run_after=2025-12-15 10:40:00+00:00
+[2025-12-15T10:40:02.840+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.123 seconds
+[2025-12-15T10:40:33.262+0000] {processor.py:186} INFO - Started process (PID=864) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:40:33.264+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:40:33.269+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:40:33.268+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:40:33.307+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:40:33.336+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:40:33.336+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:40:33.363+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:40:33.363+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:30:00+00:00, run_after=2025-12-15 10:40:00+00:00
+[2025-12-15T10:40:33.406+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.155 seconds
+[2025-12-15T10:41:03.819+0000] {processor.py:186} INFO - Started process (PID=868) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:41:03.822+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:41:03.827+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:41:03.826+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:41:03.871+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:41:03.904+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:41:03.904+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:41:03.924+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:41:03.924+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:30:00+00:00, run_after=2025-12-15 10:40:00+00:00
+[2025-12-15T10:41:03.956+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.148 seconds
+[2025-12-15T10:41:34.373+0000] {processor.py:186} INFO - Started process (PID=872) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:41:34.377+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:41:34.388+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:41:34.387+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:41:34.433+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:41:34.466+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:41:34.466+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:41:34.489+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:41:34.489+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:30:00+00:00, run_after=2025-12-15 10:40:00+00:00
+[2025-12-15T10:41:34.522+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.161 seconds
+[2025-12-15T10:42:04.898+0000] {processor.py:186} INFO - Started process (PID=876) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:42:04.900+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:42:04.907+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:42:04.906+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:42:04.934+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:42:04.976+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:42:04.976+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:42:04.996+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:42:04.996+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:30:00+00:00, run_after=2025-12-15 10:40:00+00:00
+[2025-12-15T10:42:05.031+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.158 seconds
+[2025-12-15T10:42:35.274+0000] {processor.py:186} INFO - Started process (PID=880) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:42:35.276+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:42:35.278+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:42:35.278+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:42:35.290+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:42:35.308+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:42:35.308+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:42:35.324+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:42:35.324+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:30:00+00:00, run_after=2025-12-15 10:40:00+00:00
+[2025-12-15T10:42:35.361+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.092 seconds
+[2025-12-15T10:43:05.697+0000] {processor.py:186} INFO - Started process (PID=884) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:43:05.698+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:43:05.700+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:43:05.699+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:43:05.708+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:43:05.721+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:43:05.721+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:43:05.732+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:43:05.732+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:30:00+00:00, run_after=2025-12-15 10:40:00+00:00
+[2025-12-15T10:43:05.745+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.052 seconds
+[2025-12-15T10:43:36.235+0000] {processor.py:186} INFO - Started process (PID=888) to work on /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:43:36.237+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/cdc_to_dwh.py for tasks to queue
+[2025-12-15T10:43:36.241+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:43:36.241+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:43:36.257+0000] {processor.py:925} INFO - DAG(s) 'cdc_to_dwh' retrieved from /opt/airflow/dags/cdc_to_dwh.py
+[2025-12-15T10:43:36.280+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:43:36.280+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-12-15T10:43:36.302+0000] {logging_mixin.py:190} INFO - [2025-12-15T10:43:36.302+0000] {dag.py:4138} INFO - Setting next_dagrun for cdc_to_dwh to 2025-12-15 10:30:00+00:00, run_after=2025-12-15 10:40:00+00:00
+[2025-12-15T10:43:36.320+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/cdc_to_dwh.py took 0.096 seconds

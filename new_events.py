@@ -537,6 +537,98 @@ def fraud_after_card_closed(conn):
         insert_raw_txn(conn, card_id, terminal_id, txn_ts, amount, currency, txn_type, status)
 
 
+def generate_amount_probe_fraud(
+    cur,
+    card_id: int,
+    terminal_id: int,
+    base_ts: datetime | None = None,
+    currency_code: str = "RUB",
+    txn_type: str = "atm_withdrawal",
+    attempts_min: int = 3,
+    attempts_max: int = 5,
+    start_amount_min: int = 15000,
+    start_amount_max: int = 90000,
+    step_min: int = 500,
+    step_max: int = 7000,
+    inter_attempt_sec_min: int = 20,
+    inter_attempt_sec_max: int = 120,
+    final_success_prob: float = 0.45,
+):
+    """
+    Моделирует fraud pattern: серия попыток снять наличные с уменьшающейся суммой.
+    Транзакции неизменяемы -> только INSERT.
+    """
+    if base_ts is None:
+        base_ts = datetime.now(timezone.utc) - timedelta(minutes=random.randint(1, 60))
+
+    attempts = random.randint(attempts_min, attempts_max)
+
+    # стартовая сумма
+    amount = random.randint(start_amount_min, start_amount_max)
+
+    rows = []
+    ts = base_ts
+
+    for i in range(attempts):
+        # уменьшаем сумму начиная со 2-й попытки
+        if i > 0:
+            dec = random.randint(step_min, step_max)
+            amount = max(500, amount - dec)  # защитный минимум
+
+        # статусы: первые почти всегда declined, последняя может быть успешной
+        if i < attempts - 1:
+            status = "declined"
+        else:
+            status = "approved" if random.random() < final_success_prob else "declined"
+
+        rows.append((card_id, terminal_id, ts, float(amount), currency_code, txn_type, status))
+
+        # следующий timestamp
+        ts += timedelta(seconds=random.randint(inter_attempt_sec_min, inter_attempt_sec_max))
+
+    cur.executemany(
+        """
+        INSERT INTO bank.transaction (card_id, terminal_id, txn_ts, amount, currency_code, txn_type, status)
+        VALUES (%s, %s, %s, %s, %s, %s::bank.txn_type, %s::bank.txn_status)
+        """,
+        rows,
+    )
+
+    return {
+        "attempts": attempts,
+        "first_ts": rows[0][2],
+        "last_ts": rows[-1][2],
+        "amounts": [r[3] for r in rows],
+        "statuses": [r[6] for r in rows],
+        "card_id": card_id,
+        "terminal_id": terminal_id,
+    }
+
+
+def fraud_amount_probe(conn):
+    with conn.cursor() as cur:
+        # выбираем карту и терминал
+        card_id = get_random_active_card(conn)
+        if not card_id:
+            return
+        terminals = get_random_working_terminals(conn, limit=1)
+        if not terminals:
+            return
+        terminal_id = terminals[0]
+
+        # вставляем новый вид фрода
+        info = generate_amount_probe_fraud(
+            cur=cur,
+            card_id=card_id,
+            terminal_id=terminal_id,
+            currency_code="RUB",
+            final_success_prob=0.35,  # можно крутить
+        )
+
+    conn.commit()
+    print("Injected amount-probing fraud:", info)
+
+
 def generate_fraud_txn_batch(conn):
     """
     Один вызов — один фрод-сценарий (который создаёт несколько строк).
@@ -545,6 +637,7 @@ def generate_fraud_txn_batch(conn):
         [
             fraud_rapid_withdrawals_diff_terminals,
             fraud_after_card_closed,
+            fraud_amount_probe,
         ]
     )
     scenario(conn)
@@ -603,8 +696,12 @@ def main():
         # generate_fraud_txn_batch(conn)
         # else:
         insert_normal_txn_current(conn)
-        fraud_rapid_withdrawals_diff_terminals(conn)
-        fraud_after_card_closed(conn)
+        if random.random() < FRAUD_SHARE:
+            fraud_rapid_withdrawals_diff_terminals(conn)
+        if random.random() < FRAUD_SHARE:
+            fraud_after_card_closed(conn)
+        if random.random() < FRAUD_SHARE:
+            fraud_amount_probe(conn)
 
     # 8. Бэкфилл за прошлые дни
     # backfill_past_days(conn)
