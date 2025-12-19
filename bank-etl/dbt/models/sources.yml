@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: stg
+    schema: stg
+    tables:
+      - name: customer_snapshot
+      - name: terminal_snapshot
+      - name: transaction_increment
+      - name: cdc_events

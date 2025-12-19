@@ -1,0 +1,10 @@
+name: "bank_dwh"
+version: "1.0.0"
+profile: "bank_dwh"
+
+models:
+  bank_dwh:
+    raw:
+      +schema: raw
+    ods:
+      +schema: ods

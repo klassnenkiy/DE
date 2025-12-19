@@ -1,0 +1,12 @@
+bank_dwh:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: dwh-postgres
+      user: dwh
+      password: dwh
+      port: 5432
+      dbname: bank_dwh
+      schema: public
+      threads: 4

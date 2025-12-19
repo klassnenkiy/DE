@@ -1,0 +1,134 @@
+services:
+  src-postgres:
+    image: postgres:16
+    container_name: src-postgres
+    environment:
+      POSTGRES_DB: bank_src
+      POSTGRES_USER: bank
+      POSTGRES_PASSWORD: bank
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./sql/src:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+  dwh-postgres:
+    image: postgres:16
+    container_name: dwh-postgres
+    environment:
+      POSTGRES_DB: bank_dwh
+      POSTGRES_USER: dwh
+      POSTGRES_PASSWORD: dwh
+    ports:
+      - "5434:5432"
+    volumes:
+      - ./sql/dwh:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+  airflow-db:
+    image: postgres:16
+    container_name: airflow-db
+    environment:
+      POSTGRES_DB: airflow
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+    restart: unless-stopped
+
+  airflow-init:
+    build:
+      context: ./airflow
+    image: bank-etl-airflow:latest
+    container_name: airflow-init
+    depends_on:
+      - airflow-db
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "False"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+
+      AIRFLOW__WEBSERVER__SECRET_KEY: "17ca76175d6cd01c26849b4b98aa3d3d"
+      AIRFLOW__CORE__FERNET_KEY: "I6HPgvu3mwIMRO-_sF8qRykKvAZ_nUFRpyY5_ibwgk8="
+
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
+      AIRFLOW__LOGGING__TASK_LOG_READER: task
+
+      AIRFLOW_CONN_SRC_POSTGRES: postgresql://bank:bank@src-postgres:5432/bank_src
+      AIRFLOW_CONN_DWH_POSTGRES: postgresql://dwh:dwh@dwh-postgres:5432/bank_dwh
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./dbt:/opt/airflow/dbt
+      - airflow-logs:/opt/airflow/logs
+    command: >
+      bash -c "
+      airflow db init &&
+      airflow users create --username admin --password admin --firstname admin --lastname admin --role Admin --email admin@local || true
+      "
+    restart: "no"
+
+  airflow-webserver:
+    build:
+      context: ./airflow
+    image: bank-etl-airflow:latest
+    container_name: airflow-webserver
+    depends_on:
+      - airflow-db
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "False"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+
+      AIRFLOW__WEBSERVER__SECRET_KEY: "17ca76175d6cd01c26849b4b98aa3d3d"
+      AIRFLOW__CORE__FERNET_KEY: "I6HPgvu3mwIMRO-_sF8qRykKvAZ_nUFRpyY5_ibwgk8="
+
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
+      AIRFLOW__LOGGING__TASK_LOG_READER: task
+
+      AIRFLOW_CONN_SRC_POSTGRES: postgresql://bank:bank@src-postgres:5432/bank_src
+      AIRFLOW_CONN_DWH_POSTGRES: postgresql://dwh:dwh@dwh-postgres:5432/bank_dwh
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./dbt:/opt/airflow/dbt
+      - airflow-logs:/opt/airflow/logs
+    command: >
+      bash -c "
+      exec airflow webserver
+      "
+    restart: unless-stopped
+
+  airflow-scheduler:
+    build:
+      context: ./airflow
+    image: bank-etl-airflow:latest
+    container_name: airflow-scheduler
+    depends_on:
+      - airflow-db
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "False"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+
+      AIRFLOW__WEBSERVER__SECRET_KEY: "17ca76175d6cd01c26849b4b98aa3d3d"
+      AIRFLOW__CORE__FERNET_KEY: "I6HPgvu3mwIMRO-_sF8qRykKvAZ_nUFRpyY5_ibwgk8="
+
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
+      AIRFLOW__LOGGING__TASK_LOG_READER: task
+
+      AIRFLOW_CONN_SRC_POSTGRES: postgresql://bank:bank@src-postgres:5432/bank_src
+      AIRFLOW_CONN_DWH_POSTGRES: postgresql://dwh:dwh@dwh-postgres:5432/bank_dwh
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./dbt:/opt/airflow/dbt
+      - airflow-logs:/opt/airflow/logs
+    command: >
+      bash -c "
+      exec airflow scheduler
+      "
+    restart: unless-stopped
+
+volumes:
+  airflow-logs:
