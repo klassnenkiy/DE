@@ -85,6 +85,13 @@ services:
         fs.s3a.path.style.access: true
         fs.s3a.connection.ssl.enabled: false
         table.exec.sink.upsert-materialize: NONE
+      - AWS_ACCESS_KEY_ID=admin
+      - AWS_SECRET_ACCESS_KEY=adminadmin
+      - AWS_ACCESS_KEY=admin
+      - AWS_SECRET_KEY=adminadmin
+      - AWS_REGION=us-east-1
+      - AWS_DEFAULT_REGION=us-east-1
+      - AWS_EC2_METADATA_DISABLED=true
     ports:
       - "8081:8081"
     volumes:
@@ -119,6 +126,13 @@ services:
         fs.s3a.path.style.access: true
         fs.s3a.connection.ssl.enabled: false
         table.exec.sink.upsert-materialize: NONE
+      - AWS_ACCESS_KEY_ID=admin
+      - AWS_SECRET_ACCESS_KEY=adminadmin
+      - AWS_ACCESS_KEY=admin
+      - AWS_SECRET_KEY=adminadmin
+      - AWS_REGION=us-east-1
+      - AWS_DEFAULT_REGION=us-east-1
+      - AWS_EC2_METADATA_DISABLED=true
     volumes:
       - flink_usrlib:/opt/flink/usrlib
       - flink_plugins:/opt/flink/plugins
@@ -142,9 +156,13 @@ services:
       context: ./../data-gen
     depends_on: [minio, mc]
     environment:
-      S3_ENDPOINT: http://minio:9000
       AWS_ACCESS_KEY_ID: admin
       AWS_SECRET_ACCESS_KEY: adminadmin
+      AWS_DEFAULT_REGION: us-east-1
+      AWS_REGION: us-east-1
+      AWS_EC2_METADATA_DISABLED: "true"
+      S3_ENDPOINT_URL: http://minio:9000
+      S3_USE_PATH_STYLE: "true"
       S3_BUCKET: lake
       PREFIX: incoming
       BATCHES: "3000"
