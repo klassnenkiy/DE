@@ -17,3 +17,4 @@ with DAG(
     )
 
     dbt_run
+

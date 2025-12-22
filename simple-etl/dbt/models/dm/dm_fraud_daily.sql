@@ -10,3 +10,4 @@ from {{ ref('cdm_fraud_cases') }}
 group by
     day,
     fraud_type
+

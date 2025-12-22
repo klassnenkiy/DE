@@ -78,7 +78,6 @@ amount_probing as (
     having declined_cnt >= 3 and declined_amounts_uniq >= 3
 ),
 
-
 geo_rapid as (
     select
         t.card_id as card_id,
